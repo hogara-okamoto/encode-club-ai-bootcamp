@@ -54,7 +54,7 @@ def main():
     logger.info("-" * 50)
 
     # Question 1: What ingredients do you have?
-    messages = build_system_messages("nonna")
+    messages = build_system_messages("ray")
 
     question = "What ingredients do you have?:"
     logger.info(f"Question: {question}")
