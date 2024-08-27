@@ -74,7 +74,7 @@ def main():
 
     system_output = response.choices[0].message.content or ""
     print(system_output)
-    logger.info(f"System output(alex): {system_output}")
+    logger.info(f"System output(ray): {system_output}")
 
     # Question 2: Suggest me a detailed recipe and preparation steps for making {dish}
     messages = build_system_messages("zack")
@@ -95,7 +95,7 @@ def main():
     )
 
     system_output = response.choices[0].message.content or ""
-    logger.info(f"System output(nonna): {system_output}")
+    logger.info(f"System output(zack): {system_output}")
     print(system_output)
 
     # Question 3: Critique the recipe
@@ -121,7 +121,7 @@ def main():
         messages=messages,
     )
     system_output = response.choices[0].message.content or ""
-    logger.info(f"System output(zack): {system_output}")
+    logger.info(f"System output(alex): {system_output}")
     print(system_output)
 
     logger.info("-" * 50)
